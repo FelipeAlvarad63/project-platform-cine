@@ -1,6 +1,5 @@
 package com.projectfullstack.controller;
 
-
 import com.projectfullstack.entities.Movie;
 import com.projectfullstack.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,3 +41,4 @@ public class MovieController {
         service.eliminar(id);
     }
 }
+
