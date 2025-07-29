@@ -1,3 +1,7 @@
+<script setup>
+import FormAddMovie from '@/components/FormAddMovie.vue';
+</script>
+
 <template>
   <section class="AdminView">
     <div class="container py-5">
@@ -17,35 +21,7 @@
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-add-movie" role="tabpanel"
               aria-labelledby="v-pills-add-movie-tab" tabindex="0">
-              <div class="row">
-                <div class="col-8">
-                  <form action="">
-                    <div class="mb-3">
-                      <label for="movieTitle" class="form-label">Título de la película</label>
-                      <input type="text" class="form-control" id="movieTitle"
-                        placeholder="Ingrese el título de la película">
-                    </div>
-                    <div class="mb-3">
-                      <label for="movieDate" class="form-label">Fecha de la película</label>
-                      <input type="text" class="form-control" id="movieDate"
-                        placeholder="Ingrese la fecha de la película">
-                    </div>
-                    <div class="mb-3">
-                      <label for="movieCover" class="form-label">Portada de la película</label>
-                      <input type="file" class="form-control" id="movieCover">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Agregar Película</button>
-                  </form>
-                </div>
-                <div class="col-4">
-                  <h3>Películas Agregadas</h3>
-                  <ul class="list-group">
-                    <li class="list-group-item">Película 1</li>
-                    <li class="list-group-item">Película 2</li>
-                    <li class="list-group-item">Película 3</li>
-                  </ul>
-                </div>
-              </div>
+              <FormAddMovie />
             </div>
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
               tabindex="0">...</div>
