@@ -1,5 +1,5 @@
 <script setup>
-import FormAddMovie from '@/components/FormAddMovie.vue';
+import AdminMovies from '@/components/AdminMovies.vue';
 </script>
 
 <template>
@@ -17,11 +17,11 @@ import FormAddMovie from '@/components/FormAddMovie.vue';
               type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Clientes</button>
           </div>
         </div>
-        <div class="col-9 bg-secondary">
+        <div class="col-9">
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-add-movie" role="tabpanel"
               aria-labelledby="v-pills-add-movie-tab" tabindex="0">
-              <FormAddMovie />
+              <AdminMovies />
             </div>
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
               tabindex="0">...</div>
@@ -32,33 +32,6 @@ import FormAddMovie from '@/components/FormAddMovie.vue';
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
               tabindex="0">...</div>
           </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <h3>Lista de Películas</h3>
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Título</th>
-                <th scope="col">Fecha</th>
-                <th scope="col">Portada</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Película 1</td>
-                <td>01/01/2022</td>
-                <td><img src="#" alt="Portada" class="img-thumbnail" width="100"></td>
-              </tr>
-              <tr>
-                <td>Película 2</td>
-                <td>02/02/2022</td>
-                <td><img src="#" alt="Portada" class="img-thumbnail" width="100"></td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
